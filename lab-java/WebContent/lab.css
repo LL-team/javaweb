@@ -45,7 +45,8 @@ ul{
 /*定义内容部分中主要内容模块的宽度*/
 .content.main{
 	width:80%;
-	background-color:dimgray;
+	background-color:#e7e8e7;
+	font-size:18px;
 }
 /*定义内容部分中左侧内容模块的宽度以及背景颜色*/
 .content.left{
