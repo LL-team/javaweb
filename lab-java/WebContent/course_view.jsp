@@ -16,11 +16,11 @@
 
 %>
 
-
+<%--test forward 
 <jsp:forward page="test.jsp">
 	<jsp:param name="val" value="forward"/>
 	</jsp:forward>>
- 
+ --%>
  <%=content %>
 </div>
 <%@ include file="footer.jsp" %>
