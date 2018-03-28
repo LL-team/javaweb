@@ -6,7 +6,7 @@
 <li><a href="#">本学期课表</a></li>
 <li><a href="#">仪器设备、元件</a></li>
 <li><a href="#">开放实验项目</a></li>
-<li><a href="#">联系方式</a></li>
+<li><a href="download.jsp">资料下载</a></li>
 </ul>
 
 </div>
