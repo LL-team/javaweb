@@ -1,25 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
+<%--this page collects the class info --%>
 <html>
 <head>
 <jsp:include page="header_site.jsp"></jsp:include>
 <body>
-<datalist id="course_lst">
-<option label="模电" value="AnalogCircuit" />
-<option label="数电" value="DigitalCircuit" />
-<option label="计算机组成原理" value="ComputerArchitecture" />
-<option label="硬件综合实训" value="HardwareDesign" />
-</datalist>
-<datalist id="major_lst">
-<option label="计科" value="cs" />
-<option label="数媒" value="dm" />
-<option label="软件" value="sw" />
-<option label="信息" value="is" />
-<option label="网络" value="ne" />
-<option label="空数" value="st" />
-
-</datalist>
 <jsp:include page="header.jsp"></jsp:include>
 <jsp:include page="nav.jsp"></jsp:include>
 <jsp:include page="content_left.jsp"></jsp:include>

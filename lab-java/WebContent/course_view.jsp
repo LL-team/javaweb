@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
     
 <!DOCTYPE html>
+<%--这是查看实验室课程表的this page is for overview the class schedule --%>
 <html>
 <jsp:include page="header_site.jsp" />
 <body>
@@ -15,12 +16,6 @@
 	content+="这里的课程信息需要后期从数据库里查询。";
 
 %>
-
-<%--test forward 
-<jsp:forward page="test.jsp">
-	<jsp:param name="val" value="forward"/>
-	</jsp:forward>>
- --%>
  <%=content %>
 </div>
 <%@ include file="footer.jsp" %>

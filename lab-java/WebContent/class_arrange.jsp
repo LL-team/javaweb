@@ -12,6 +12,7 @@
 
 %>
 <!DOCTYPE HTML>
+<%--this page will arrange the class and write the info to db --%>
 <html>
 <jsp:include page="header_site.jsp"></jsp:include>
 <body>
