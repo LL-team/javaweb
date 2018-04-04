@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" import="java.sql.*" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
 <!DOCTYPE html>
@@ -9,7 +9,9 @@
 <%@ include file="header.jsp" %>
 <%@ include file="nav.jsp" %>
 <%@ include file="content_left.jsp" %>
+<jsp:include page="connectSQL.jsp"></jsp:include>
 <div class="content main">
+
 <%
 	String content = new java.util.Date().toString();
 	content+="<br>";
