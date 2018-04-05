@@ -6,12 +6,20 @@
     try{
     	
     	Class.forName("com.mysql.jdbc.Driver");
-    	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/mysql?user=root&password=");
+    	Connection conn = DriverManager.getConnection(
+    			"jdbc:mysql://localhost/lab","root","123987he");
     	
-    	
-    	conn.close();
+    	/* Statement st = conn.createStatement();
+    	ResultSet rs = st.executeQuery("show databases;");
+    	int column = rs.getMetaData().getColumnCount();
+    	System.out.println(column);
+    	while(rs.next()){
+    		String str = rs.getString(1);
+    		System.out.println(str);
+    	} */
+    	//conn.close();
     }catch(Exception e){
-    	System.out.println("加载数据库驱动失败，具体内容如下：");
+    	System.out.println("出现错误，具体内容如下：");
     	e.printStackTrace();
     }
     %>
