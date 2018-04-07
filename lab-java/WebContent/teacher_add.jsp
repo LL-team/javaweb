@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.sql.*" import="java.util.*"
+import="cs.Db"
 contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
@@ -18,10 +19,10 @@ contentType="text/html; charset=UTF-8"
 		c.get(Calendar.SECOND);
 	String sql = "insert into teachers (id,name,logDate) values(?,?,?)";
 	int rz=0;
-	try{		
-	    Class.forName("com.mysql.jdbc.Driver");
-	    Connection conn = DriverManager.getConnection(
-	    	"jdbc:mysql://localhost/lab","root","123987he");
+	try{
+		Db db = new Db();
+		Connection conn = db.getConnection();
+
 	    PreparedStatement prep = conn.prepareStatement(sql);
 	    prep.setInt(1, teacher_id);
 	    prep.setString(2,teacher_name);

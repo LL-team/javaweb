@@ -9,7 +9,7 @@
 <%@ include file="header.jsp" %>
 <%@ include file="nav.jsp" %>
 <%@ include file="content_left.jsp" %>
-<jsp:include page="connectSQL.jsp"></jsp:include>
+
 <div class="content main">
 
 <%

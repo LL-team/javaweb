@@ -1,5 +1,7 @@
-<%@ page language="java" import="java.sql.*" import="java.util.*" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.sql.*" import="java.util.*" 
+import="cs.Db"
+ contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
     
 <!DOCTYPE html>
 <%--这是添加教师信息的this page is for adding teacher info --%>
@@ -19,9 +21,9 @@
 <% 
 	int rz=0;
 	try{		
-	    Class.forName("com.mysql.jdbc.Driver");
-	    Connection conn = DriverManager.getConnection(
-	    	"jdbc:mysql://localhost/lab","root","123987he");
+
+	    Db db = new Db();
+	    Connection conn = db.getConnection();
 	    Statement st = conn.createStatement();
 	    String sql = "select * from teachers;";
 	    ResultSet rs = st.executeQuery(sql);
