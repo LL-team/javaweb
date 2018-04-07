@@ -10,7 +10,8 @@
 		if(attr.equals("user")){
 			user = (String)session.getAttribute("user");
 			out.print("你好，"+user+"。");
-			out.print("<a href='logout.jsp'>注销</a>");
+			out.print("<form action=\"logout.jsp\" method=\"post\">");
+			out.print("<input type=\"submit\" value=\"logout\"></form>");
 			break;
 		}
 	}
