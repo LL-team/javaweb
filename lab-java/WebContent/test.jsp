@@ -8,7 +8,7 @@
 <jsp:include page="nav.jsp"></jsp:include>
 <jsp:include page="content_left.jsp"></jsp:include>
 <div class="content main">
-<a href="testRequest.jsp?val=2">这是测试超链接传值的。</a><br>
+<a href="testRequest.jsp?val=传中文">这是测试超链接传值的。</a><br>
 <a href="showCookie.jsp">测试cookie</a><br>
 
 <%

@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
     
 <%
+	request.setCharacterEncoding("UTF-8");
 	String course = request.getParameter("course");
 	String major = request.getParameter("major");
 	String grade = request.getParameter("class_grade");
@@ -9,7 +10,10 @@
 	String course_time = request.getParameter("jieci");
 	String swk = request.getParameter("start_week");
 	String ewk = request.getParameter("end_week");
-
+	String nt = request.getParameter("note");
+	//String note = new String(request.getParameter("note").getBytes("ISO-8859-1"),"UTF-8");
+	//System.out.println(note);
+	System.out.println(nt);
 %>
 <!DOCTYPE HTML>
 <%--this page will arrange the class and write the info to db --%>
@@ -27,6 +31,7 @@
 课程时间为：<%= course_time %>节<br>
 起始为：<%= swk %>周<br>
 结束为：<%= ewk %>周<br>
+备注：<%=nt %>
 
 </div>
 <jsp:include page="footer.jsp"></jsp:include>

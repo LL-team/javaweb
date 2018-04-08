@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE HTML>
 <%--this page collects the class info --%>
 <html>
@@ -61,6 +62,7 @@
 </td><td>起始周：<input type="number" name="start_week" min="1" max="20"/></td>
 <td>结束周：<input type="number" name="end_week" min="1" max="20"/></td>
 </tr>
+<tr><td>备注：<input type="text" name="note" /></td></tr>
 <tr><td><button type="submit">submit</button></td><td><button type="reset">reset</button></td></tr>
 </table>
 </form>

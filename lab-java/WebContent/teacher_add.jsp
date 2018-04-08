@@ -6,9 +6,10 @@ contentType="text/html; charset=UTF-8"
 
 <%--这是添加教师信息的this page is for adding teacher info --%>
 
-
 <% 
+	request.setCharacterEncoding("utf-8");
 	String teacher_name = request.getParameter("nm");
+	//System.out.println("the name is:"+teacher_name);
 	int teacher_id = Integer.parseInt(request.getParameter("staffid"));
 	Calendar c = Calendar.getInstance();
 	String d = c.get(Calendar.YEAR)+"-"+
@@ -22,7 +23,6 @@ contentType="text/html; charset=UTF-8"
 	try{
 		Db db = new Db();
 		Connection conn = db.getConnection();
-
 	    PreparedStatement prep = conn.prepareStatement(sql);
 	    prep.setInt(1, teacher_id);
 	    prep.setString(2,teacher_name);

@@ -2,12 +2,10 @@
 import="cs.Db"
  contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-    
 <!DOCTYPE html>
 <%--这是添加教师信息的this page is for adding teacher info --%>
 <html>
 <jsp:include page="header_site.jsp" />
-
 
 <body>
 <%@ include file="header.jsp" %>
