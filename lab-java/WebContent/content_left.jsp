@@ -18,7 +18,9 @@
 	
 		
 	if(user.equals("")){
-		out.print("<form action=\"login.jsp\" method=\"post\">");
+		//out.print("<form action=\"login.jsp\" method=\"post\">");
+		//use servlet
+		out.print("<form action=\"Login\" method=\"post\">");
 		out.print("ID:<input type=\"number\" min=20060001 name=\"id\">");
 		out.print("<input type=\"submit\" value=\"login\"></form>");
 	}

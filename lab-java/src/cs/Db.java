@@ -16,7 +16,8 @@ public class Db {
 		Connection conn = null;
 		try {
 			conn = DriverManager.getConnection(
-			    	"jdbc:mysql://localhost/lab","root","123987he");
+			    	"jdbc:mysql://localhost/lab?useUnicode=true&characterEncoding=UTF-8","root","123987he");
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
